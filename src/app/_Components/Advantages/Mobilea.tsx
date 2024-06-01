@@ -3,12 +3,12 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Mobile: FC = () => {
+const Mobileadvantages: FC = () => {
   return (
     <>
-      <div className=" relative  z-10 flex items-center justify-center  h-full  " >
+      <div className=" relative z-10 flex items-center justify-center  h-full" >
         <div className="flex  items-center justify-center"> 
-            <Image src={'/phone.png'} width={190} height={190} alt="iphone"/>
+            <Image src={'/phone2.svg'} width={190} height={190} alt="iphone"/>
         </div>
 
 
@@ -34,4 +34,4 @@ const Mobile: FC = () => {
   );
 };
 
-export default Mobile;
+export default Mobileadvantages;
