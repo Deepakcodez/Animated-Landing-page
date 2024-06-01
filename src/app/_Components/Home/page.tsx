@@ -9,7 +9,6 @@ import Light1 from "./Light1";
 import Light2 from "./Light2";
 import Eclipse1 from "./Eclipse";
 import Stripe from "./Strap";
-import Strap2 from "./Strap2";
 
 const Homepg: FC = () => {
   console.log(">>>>>>>>>>>", data);

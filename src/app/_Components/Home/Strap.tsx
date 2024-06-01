@@ -1,10 +1,17 @@
-import { before } from "node:test";
 import { FC } from "react";
-
+import {motion }from 'framer-motion'
 const Stripe: FC = () => {
   return (
     <>
-        <div
+        <motion.div
+         initial={{ opacity: 0, }}
+         animate={{ opacity: 1, }}
+         transition={{
+           type: "spring",
+           stiffness: 40,
+           duration: 2,
+           delay: 1.5,
+         }}
           className=" relative strip flex items-center h-[3rem] w-fit  px-8 ps-[5rem] rounded-md  bg-[#FF5555] -rotate-[35deg]  z-[20] top-[5rem] left-[8rem]
         // after
         after:content-['CSS'] after:absolute after:bg-black after:text-white  after:w-[25rem]
@@ -15,7 +22,7 @@ const Stripe: FC = () => {
          "
         >
           Created by pure CSS
-        </div>
+        </motion.div>
     </>
   );
 };
