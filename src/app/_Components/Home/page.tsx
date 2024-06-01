@@ -27,7 +27,7 @@ const Homepg: FC = () => {
               duration: 2,
               delay: 0.5,
             }}
-            className="text-6xl font-bold mt-[5rem] pe-[1rem]  "
+            className="sm:text-6xl text-4xl font-bold mt-[5rem] pe-[1rem]  "
           >
             {data.hero.headline}
           </motion.h1>
@@ -40,7 +40,7 @@ const Homepg: FC = () => {
               duration: 2,
               delay: 0.7,
             }}
-            className="text-4xl font-semibold font-italic "
+            className="sm:text-4xl text-2xl font-semibold font-italic "
           >
             {data.hero.subheadline}
           </motion.h3>
@@ -53,7 +53,7 @@ const Homepg: FC = () => {
               duration: 2,
               delay: 0.9,
             }}
-            className="mt-5 text-black/65 md:pe-[5rem] pe-[1rem]"
+            className="mt-5 text-black/65 md:pe-[5rem] pe-[1rem] text-xs"
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
             dolore dolor distinctio, ad atque placeat! Lorem ipsum dolor sit
