@@ -1,8 +1,9 @@
+"use client"
 import { FC } from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { motion } from 'framer-motion'
 interface NavItem {
   name: string;
   path: string;
@@ -18,7 +19,16 @@ const Navbar: FC = () => {
 
   return (
     <>
-      <div className="flex justify-between text-black lg:px-[12rem] md:px-[7rem] px-[.5rem]  mt-9 ">
+      <motion.div
+       initial={{ opacity: 0, y:-20 }}
+       animate={{ opacity: 1, y:0 }}
+       transition={{
+         type: "spring",
+         stiffness: 40,
+         duration: 2,
+         delay: 1.3,
+        }}
+      className="flex justify-between text-black lg:px-[12rem] md:px-[7rem] px-[.5rem]  mt-9 ">
         {/* right section  */}
         <div className="flex items-center  md:gap-5 gap-1 ">
           <div className="flex md:hidden items-center">
@@ -40,7 +50,7 @@ const Navbar: FC = () => {
             Download
           </button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
