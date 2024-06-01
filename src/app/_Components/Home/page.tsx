@@ -86,7 +86,7 @@ const Homepg: FC = () => {
         className="absolute lg:-right-[3%] -right-[10%] mt-[3rem] z-20 md:flex hidden">
           <Image 
           className="h-[30rem] lg:h-auto"
-          src={"/iphone2.svg"} width={500} height={500} alt="iphone1" />
+          src={"/iPhone2.svg"} width={500} height={500} alt="iphone2" />
         </motion.div>
 
 
@@ -104,7 +104,7 @@ const Homepg: FC = () => {
           <Image
         className="h-[30rem] lg:h-auto"
 
-          src={"/iphone1.svg"} width={500} height={500} alt="iphone1" />
+          src={"/iphone1.svg"} width={500} height={500} alt="iphone3" />
         </motion.div>
        
         <Light1/>
