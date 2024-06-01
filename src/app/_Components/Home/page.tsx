@@ -16,8 +16,8 @@ const Homepg: FC = () => {
 
   return (
     <>
-      <div className="w-full h-[200vh] grid grid-cols-5 relative z-[20] ">
-        <div className=" col-span-5 md:col-span-3 lg:ps-[12rem] md:ps-[7rem] ps-[.5rem] text-black ">
+      <div className="w-full h-screen grid grid-cols-5 relative z-[20] overflow-x-hidden  overflow-y-hidden">
+        <div className=" col-span-5 md:col-span-3 lg:ps-[12rem] md:ps-[7rem] ps-[.5rem] text-black h-fit   ">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -61,6 +61,7 @@ const Homepg: FC = () => {
           </motion.h3>
           {/* button */}
           <motion.div
+          className=" flex justify-center md:justify-start  "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -156,7 +157,7 @@ const Homepg: FC = () => {
             />
           </motion.div>
 
-          <Light1 />
+          <Light1 />/
           <Eclipse1 />
         </div>
       </div>

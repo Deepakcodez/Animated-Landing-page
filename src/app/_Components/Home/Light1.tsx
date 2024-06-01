@@ -26,14 +26,14 @@ const Light1: FC = () => {
          duration: 2,
          delay: 1,
         }}
-        className="absolute  lg:-right-[3%]  h-[120vh] -mt-[5rem] overflow-y-hidden md:flex hidden  "
+      className="absolute  lg:-right-[2%]  h-[120vh] -mt-[2rem] overflow-y-hidden md:flex hidden  "
       >
         
         <Image
-        className="lg:h-auto h-[30rem] -"
-         src={"/light1.svg"} 
-         height={500} 
-         width={500} 
+        className="lg:h-auto h-[10rem]  "
+         src={"/grainlight2.png"} 
+         height={10} 
+         width={10} 
          alt="light" />
       </motion.div>
     </>

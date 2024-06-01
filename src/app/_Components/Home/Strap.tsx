@@ -12,7 +12,7 @@ const Stripe: FC = () => {
            duration: 2,
            delay: 1.5,
          }}
-          className=" relative lg:scale-100 sm:scale-75  items-center h-[3rem] w-fit  px-8 ps-[5rem] rounded-md  bg-[#FF5555] -rotate-[35deg]  z-[20] top-[5rem] sm:top-[3rem] md:left-[8rem] hidden md:flex 
+          className=" relative lg:scale-100 sm:scale-75  items-center h-[3rem] w-fit  px-8 ps-[5rem] rounded-md  bg-[#FF5555] -rotate-[35deg]  z-[20] top-[5rem] sm:top-[5rem] md:left-[8rem] hidden md:flex 
         // after
         after:content-['CSS'] after:absolute after:bg-black after:text-white  after:w-[25rem]
          after:-translate-x-[13rem] after:h-[3rem] after:rounded-e-md after:origin-bottom-right after:rotate-[16deg] after:flex after:items-center after:justify-center 
