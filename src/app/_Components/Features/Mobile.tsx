@@ -2,6 +2,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Star from "../Star";
 
 const Mobile: FC = () => {
   return (
@@ -29,6 +30,9 @@ const Mobile: FC = () => {
         <Image
         className="absolute -z-20 -top-14 "
          src={'/grainLight.png'} width={550} height={190} alt="grain light"/>
+       <div className="absolute left-12 top-[18rem]">
+          <Star size={30} />
+        </div>
       </div>
     </>
   );

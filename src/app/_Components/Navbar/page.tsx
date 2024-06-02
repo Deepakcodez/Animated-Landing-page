@@ -19,7 +19,7 @@ const Navbar: FC = () => {
 
   const navItems: NavItem[] = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/#test" },
+    { name: "Testinomial", path: "/#test" },
     { name: "Pricing", path: "/#pricing" },
     { name: "Features", path: "/#feature" },
   ];

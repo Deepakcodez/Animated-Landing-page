@@ -9,10 +9,11 @@ import Light1 from "./Light1";
 import Light2 from "./Light2";
 import Eclipse1 from "./Eclipse";
 import Stripe from "./Strap";
+import Star from "../Star";
 
 const Homepg: FC = () => {
   const [isHovered, setIsHovered] = useState(false);
-
+  const size:number = 50
   return (
     <>
       <div className="w-full md:h-screen h-auto grid sm:grid-cols-5 relative z-[20] overflow-x-hidden  overflow-y-hidden pb-20">
@@ -104,7 +105,7 @@ const Homepg: FC = () => {
               duration: 2,
               delay: 0.5,
             }}
-            className="absolute lg:right-[2%] -right-[4%] -mt-7 z-30 md:flex hidden "
+            className="absolute lg:right-[2%] -right-[4%] -mt-7 z-30 md:flex hidden  "
           >
             <Image
               className="h-[30rem] lg:h-auto"
@@ -175,6 +176,13 @@ const Homepg: FC = () => {
           </motion.div>
 
           <Eclipse1 />
+        </div>
+
+        <div className="absolute left-12 top-[18rem]">
+          <Star size={30} />
+        </div>
+        <div className="absolute right-12 top-0">
+          <Star size={50} />
         </div>
       </div>
       <Light2 />
