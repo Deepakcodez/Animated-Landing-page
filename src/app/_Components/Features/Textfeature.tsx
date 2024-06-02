@@ -58,7 +58,7 @@ const Textfeature: FC = () => {
 
         <Image
         className="absolute z-0  -right-[12rem]"
-         src={"/grainlight.png"} 
+         src={"/grainLight.png"} 
          height={400} 
          width={400} 
          alt="light" />

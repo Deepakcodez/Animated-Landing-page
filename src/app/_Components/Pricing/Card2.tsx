@@ -3,7 +3,7 @@ import data from "../../../data.json";
 const Card2: FC = () => {
   return (
     <>
-      <div className="border h-[30rem] w-[22rem] text-black/75  rounded-md p-[4rem] flex flex-col gap-8 shadow-md hover:shadow-2xl transition duration-500 ease-in-out">
+      <div className="border backdrop-blur-xl h-[30rem] w-[22rem] text-black/75  rounded-md p-[4rem] flex flex-col gap-8 shadow-md hover:shadow-2xl transition duration-500 ease-in-out">
         <div className="text-center">
           <h1 className="font-semibold text-lg text-orange-600 ">Premium</h1>
           <h1 className="text-2xl">$3.50</h1>

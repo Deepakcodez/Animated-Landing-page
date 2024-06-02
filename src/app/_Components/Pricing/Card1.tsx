@@ -3,7 +3,7 @@ import data from "../../../data.json";
 const Card1: FC = () => {
   return (
     <>
-      <div className="bg-gradient-to-t from-white to-orange-100 h-[30rem] w-[22rem] max-h-auto text-black/75  rounded-md p-[4rem] flex flex-col gap-8 shadow-md hover:shadow-2xl transition duration-500 ease-in-out">
+      <div className="bg-gradient-to-t from-transparent to-orange-100 h-[30rem] w-[22rem] max-h-auto text-black/75  rounded-md p-[4rem] flex flex-col gap-8 shadow-md hover:shadow-2xl transition duration-500 ease-in-out backdrop-blur-xl">
         <div className="text-center">
           <h1 className="font-semibold text-lg text-orange-600 ">Basic</h1>
           <h1 className="text-2xl">$0.00</h1>
