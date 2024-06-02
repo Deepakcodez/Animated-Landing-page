@@ -4,7 +4,7 @@ import { FC } from "react";
 const Texttestinomial: FC = () => {
   return (
     <>
-      <div className="relative z-10 md:h-full h-fit lg:pe-[5rem] flex flex-col gap-[2rem] justify-center">
+      <div className="relative  z-10 md:h-full h-fit lg:pe-[5rem] flex flex-col gap-[2rem] justify-center">
         {/* heading */}
         <div>
           <h1 className="text-lg  font-bold text-black    ">
@@ -61,6 +61,7 @@ const Texttestinomial: FC = () => {
                 alt="person"
                 />
             </div>
+            <h1 className="font-bold mt-2 text-sm">Nicks Jones</h1>
           </div>
         </div>
       </div>

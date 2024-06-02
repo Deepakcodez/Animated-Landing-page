@@ -4,7 +4,7 @@ import { FC } from "react";
 const Imagetestinomial:FC = () => {
     return (
         <>
-        <div className=" relative  h-full flex justify-center items-center w-full   " >
+        <div className=" relative  h-full md:flex hidden justify-center items-center w-full   " >
 
 
         

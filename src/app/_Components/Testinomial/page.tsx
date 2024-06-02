@@ -10,11 +10,11 @@ const Testinomial:FC = () => {
             <h1 className="font-bold text-2xl">What Our Users</h1>
             <h1 className="font-bold text-2xl">Says About Us</h1>
         </div>
-        <div className=" grid md:grid-cols-2  text-black md:h-[70vh] h-[120vh]    overflow-hidden pb-[4rem] ">
+        <div className=" grid md:grid-cols-2  text-black md:h-[70vh]    overflow-hidden pb-[4rem] ">
         <div className=" h-full  ">
             <Imagetestinomial/>
        </div>
-        <div className=" h-fit md:h-full  ps-2  pe-[5rem]  ">
+        <div className=" h-fit md:h-full  ps-[1rem]  pe-[5rem]  ">
             <Texttestinomial/>
         </div>
       </div>

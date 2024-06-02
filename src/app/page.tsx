@@ -4,6 +4,7 @@ import Navbar from "./_Components/Navbar/page";
 import Features from "./_Components/Features/page";
 import Advantages from "./_Components/Advantages/page";
 import Testinomial from "./_Components/Testinomial/page";
+import Pricing from "./_Components/Pricing/page";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <Features/>
     <Advantages/>
     <Testinomial/>
+    <Pricing/>
   </div>
   </>
   );
