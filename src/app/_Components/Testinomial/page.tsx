@@ -5,7 +5,7 @@ import Texttestinomial from "./Testinomialtext";
 const Testinomial:FC = () => {
     return ( 
         <>
-        <div id="testinomials" className="flex justify-center items-center flex-col text-black mt-[5rem]  ">
+        <div id="test" className="flex justify-center items-center flex-col text-black mt-[5rem]  ">
             <h1 className="text-orange-500 text-sm">TESTINOMIAL</h1>
             <h1 className="font-bold text-2xl">What Our Users</h1>
             <h1 className="font-bold text-2xl">Says About Us</h1>

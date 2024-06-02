@@ -30,13 +30,13 @@ const Light1: FC = () => {
       >
         
         <Image
-        className="lg:h-auto h-[10rem]  "
+        className="lg:h-aut0 h-[10rem]  "
          src={"/grainlight2.png"} 
          height={10} 
          width={10} 
          alt="light" />
       </motion.div>
-    </>
+    </> 
   );
 };
 

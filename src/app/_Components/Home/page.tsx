@@ -60,7 +60,7 @@ const Homepg: FC = () => {
           </motion.h3>
           {/* button */}
           <motion.div
-          className=" flex justify-center md:justify-start  "
+            className=" flex justify-center md:justify-start  "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -90,8 +90,7 @@ const Homepg: FC = () => {
               </div>
             </Link>{" "}
           </motion.div>
-             <Stripe/>
-
+          <Stripe />
         </div>
 
         {/* //left section */}
@@ -156,10 +155,24 @@ const Homepg: FC = () => {
             />
           </motion.div>
 
-          <Image
-        className=" absolute -z-20 top-40 lg:right-[5rem] md:-right-20 rotate-[70deg] "
-        src={'/grainLight.png'} width={450} height={190} alt="grain light"
-        />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 10,
+              duration: 5,
+              delay: 1.5,
+            }}
+          >
+            <Image
+              className=" absolute -z-20 top-40 lg:right-[5rem] md:-right-20 rotate-[70deg] "
+              src={"/grainLight.png"}
+              width={450}
+              height={190}
+              alt="grain light"
+            />
+          </motion.div>
 
           <Eclipse1 />
         </div>

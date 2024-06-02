@@ -17,31 +17,25 @@ const Light2: FC = () => {
 
   return (
     <>
+      
       <motion.div
-       initial={{ opacity: 0, x: 40 }}
-       animate={{ opacity: 1, x: 0 }}
-       transition={{
-         type: "spring",
-         stiffness: 40,
-         duration: 2,
-         delay: 1,
-        }}
-        className="absolute top-1 left-[10rem]  overflow-y-hidden   "
-      >
-        <Image
-          className={`${isShow?"": "hidden"} absolute  mix-blend-soft-light h-auto `}
-          src={"/grain.svg"}
-          height={1500}
-          width={1500}
-          alt="grain"
-        />
-        <Image
-        className="lg:h-auto md:h-[30rem] h-[35rem] md:mt-0 -mt-[3rem] "
-         src={"/light2.svg"} 
-         height={400} 
-         width={400} 
-         alt="light" />
-      </motion.div>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 10,
+              duration: 5,
+              delay: 1.5,
+            }}
+          >
+            <Image
+              className=" absolute z-0 top-[8rem] lg:left-[25rem] "
+              src={"/grainLight.png"}
+              width={250}
+              height={300}
+              alt="grain light"
+            />
+          </motion.div>
     </>
   );
 };
