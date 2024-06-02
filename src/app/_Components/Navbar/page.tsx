@@ -12,9 +12,9 @@ interface NavItem {
 const Navbar: FC = () => {
   const navItems: NavItem[] = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/#" },
-    { name: "Pricing", path: "/#" },
-    { name: "Features", path: "/#" },
+    { name: "About Us", path: "/#testinomials" },
+    { name: "Pricing", path: "/#pricing" },
+    { name: "Features", path: "/#feature" },
   ];
 
   return (
@@ -34,9 +34,11 @@ const Navbar: FC = () => {
           <div className="flex md:hidden items-center">
             <Menu size={28} />
           </div>
+          <Link href={"/"} className="cursor-pointer">
           <Image src={"/logo.svg"} width={100} height={100} alt="Logo" />
+          </Link>
 
-          <ul className="hidden md:flex gap-4">
+          <ul className="hidden md:flex gap-4 cursor-pointer">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link href={item.path}>{item.name}</Link>
@@ -46,7 +48,7 @@ const Navbar: FC = () => {
         </div>
         {/* left section */}
         <div className="flex item-center gap-2   ">
-          <button className="bg-black text-white md:py-3 py-2 md:px-6 px-4   rounded-[.2rem]">
+          <button className="bg-black hover:bg-black/75 text-white md:py-3 py-2 md:px-6 px-4   rounded-[.2rem]">
             Download
           </button>
         </div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 const Pricing: FC = () => {
   return (
     <>
-    <div className="text-black text-center py-5 pb-[5rem]">
+    <div id="pricing" className="text-black text-center py-5 pb-[5rem]">
         <h1 className="text- text-orange-500">Pricing</h1>
         <h1 className="text-3xl text-black font-semibold">What we Provide</h1>
     </div>

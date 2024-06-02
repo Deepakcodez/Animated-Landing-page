@@ -5,7 +5,7 @@ import Textfeature from "./Textfeature";
 const Features: FC = () => {
   return (
     <>
-      <div className=" grid md:grid-cols-2 flex-row-reverse text-black min-h-auto max-h-[auto] mt-5">
+      <div id="feature" className=" grid md:grid-cols-2 flex-row-reverse text-black min-h-auto max-h-[auto] mt-5">
         <div className=" h-auto">
             <Mobile/>
        </div>

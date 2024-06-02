@@ -11,12 +11,11 @@ import Eclipse1 from "./Eclipse";
 import Stripe from "./Strap";
 
 const Homepg: FC = () => {
-  console.log(">>>>>>>>>>>", data);
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
-      <div className="w-full h-screen grid grid-cols-5 relative z-[20] overflow-x-hidden  overflow-y-hidden">
+      <div className="w-full md:h-screen h-auto grid sm:grid-cols-5 relative z-[20] overflow-x-hidden  overflow-y-hidden pb-20">
         <div className=" col-span-5 md:col-span-3 lg:ps-[12rem] md:ps-[7rem] ps-[.5rem] text-black h-fit   ">
           <motion.h1
             initial={{ opacity: 0 }}
@@ -157,7 +156,11 @@ const Homepg: FC = () => {
             />
           </motion.div>
 
-          <Light1 />/
+          <Image
+        className=" absolute -z-20 top-40 lg:right-[5rem] md:-right-20 rotate-[70deg] "
+        src={'/grainLight.png'} width={450} height={190} alt="grain light"
+        />
+
           <Eclipse1 />
         </div>
       </div>
