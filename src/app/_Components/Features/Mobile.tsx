@@ -35,13 +35,25 @@ const Mobile: FC = () => {
         after:absolute  after:h-[25rem] after:w-[25rem] after:rounded-full after:border-[.04rem] after:border-black/75 after:translate-x-10 after:-translate-y-9
         "
         ></motion.div>
-        <Image
+        <motion.div
           className="absolute -z-20 -top-14 "
-          src={"/grainLight.png"}
-          width={550}
-          height={190}
-          alt="grain light"
-        />
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 40,
+            duration: 2,
+            delay: 1.3,
+          }}
+        >
+          <Image
+            src={"/grainLight.png"}
+            width={550}
+            height={190}
+            alt="grain light"
+          />
+        </motion.div>
+
         <div className="absolute left-12 top-[18rem]">
           <Star size={30} />
         </div>
