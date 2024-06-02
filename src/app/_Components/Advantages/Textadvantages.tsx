@@ -9,13 +9,19 @@ const Textadvantage: FC = () => {
         {/* heading */}
         <div>
           <h1 className="text-sm text-orange-500">ADVANTAGES</h1>
-          <h1 className="text-4xl  font-bold text-black    ">Why Choose UiFry?</h1>
+          <h1 className="text-4xl  font-bold text-black    ">
+            Why Choose UiFry?
+          </h1>
         </div>
 
         <div className=" relative z-10 flex flex-col gap-[2.5rem]">
           <div className=" ">
             <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
-            <Bell className="bg-orange-600 p-1 rounded-full" color="white" size={30} />
+              <Bell
+                className="bg-orange-600 p-1 rounded-full"
+                color="white"
+                size={30}
+              />
               <h1>Clever Notifications</h1>
             </div>
             <p className="text-sm text-black/50 mt-3">
@@ -25,11 +31,7 @@ const Textadvantage: FC = () => {
               consectetur adipisicing elit. Dicta, ullam.
             </p>
           </div>
-
-
-
-
-      </div>
+        </div>
       </div>
     </>
   );

@@ -14,8 +14,8 @@ const Textfeature: FC = () => {
 
         <div className=" relative z-10 flex flex-col gap-[2.5rem]">
           <div className=" ">
-          <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
-            <ShipWheel  color="orange" size={20} />
+            <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
+              <ShipWheel color="orange" size={20} />
               <h1>Budgeting Interval</h1>
             </div>
             <p className="text-sm text-black/50 mt-3">
@@ -25,13 +25,10 @@ const Textfeature: FC = () => {
               consectetur adipisicing elit. Dicta, ullam.
             </p>
           </div>
-
-
-
 
           <div className="">
-          <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
-            <Box  color="orange" size={20} />
+            <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
+              <Box color="orange" size={20} />
               <h1>Budgeting Interval</h1>
             </div>
             <p className="text-sm text-black/50 mt-3">
@@ -42,11 +39,9 @@ const Textfeature: FC = () => {
             </p>
           </div>
 
-
-
           <div className=" ">
-          <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
-            <Sparkle  color="orange" size={20} />
+            <div className="text-black font-bold text-md font-serif flex gap-2 items-center">
+              <Sparkle color="orange" size={20} />
               <h1>Budgeting Interval</h1>
             </div>
             <p className="text-sm text-black/50 mt-3 ">
@@ -58,14 +53,13 @@ const Textfeature: FC = () => {
           </div>
         </div>
 
-
-
         <Image
-        className="absolute z-0  -right-[12rem]"
-         src={"/grainLight.png"} 
-         height={400} 
-         width={400} 
-         alt="light" />
+          className="absolute z-0  -right-[12rem]"
+          src={"/grainLight.png"}
+          height={400}
+          width={400}
+          alt="light"
+        />
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { FC } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,16 +7,24 @@ import Star from "../Star";
 const Mobile: FC = () => {
   return (
     <>
-      <div className=" relative  z-10 flex items-center justify-center  h-full  " >
-        <div className="flex  items-center justify-center"> 
-            <Image src={'/phone.png'} width={190} height={190} alt="iphone"/>
-        </div>
-
+      <div className=" relative  z-10 flex items-center justify-center  h-full  ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 40,
+            duration: 2,
+            delay: 1.3,
+          }}
+          className="flex  items-center justify-center"
+        >
+          <Image src={"/phone.png"} width={190} height={190} alt="iphone" />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-
           transition={{
             type: "spring",
             stiffness: 40,
@@ -28,9 +36,13 @@ const Mobile: FC = () => {
         "
         ></motion.div>
         <Image
-        className="absolute -z-20 -top-14 "
-         src={'/grainLight.png'} width={550} height={190} alt="grain light"/>
-       <div className="absolute left-12 top-[18rem]">
+          className="absolute -z-20 -top-14 "
+          src={"/grainLight.png"}
+          width={550}
+          height={190}
+          alt="grain light"
+        />
+        <div className="absolute left-12 top-[18rem]">
           <Star size={30} />
         </div>
       </div>

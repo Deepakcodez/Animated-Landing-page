@@ -6,7 +6,6 @@ const Imagetestinomial: FC = () => {
   return (
     <>
       <div className=" relative  h-full md:flex hidden justify-center items-center w-full   ">
-      
         <Image
           className="absolute z-10 md:h-auto h-[15rem] "
           src={"/testinomial.svg"}

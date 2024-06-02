@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { FC } from "react";
 import { motion } from "framer-motion";
@@ -9,8 +9,7 @@ interface NavItem {
   path: string;
 }
 const MobileBar: FC = () => {
-
-    const pathname = usePathname();
+  const pathname = usePathname();
 
   const navItems: NavItem[] = [
     { name: "Home", path: "/" },

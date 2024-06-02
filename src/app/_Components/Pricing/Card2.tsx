@@ -10,12 +10,14 @@ const Card2: FC = () => {
         </div>
 
         <ul className="flex flex-col items-start justify-start gap-4 text-black list-disc ">
-          <li>Lorem ipsum  !</li>
+          <li>Lorem ipsum !</li>
           <li>Lorem ipsuloit amet !</li>
-          <li> ipsum  sit amet !</li>
+          <li> ipsum sit amet !</li>
           <li>Lorem sit amet !</li>
         </ul>
-        <button className="bg-black rounded-md text-white  py-2">Get Team Plan</button>
+        <button className="bg-black rounded-md text-white  py-2">
+          Get Team Plan
+        </button>
       </div>
     </>
   );

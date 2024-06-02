@@ -15,8 +15,9 @@ const Card1: FC = () => {
           <li>Lorem ipsum dolor</li>
           <li>Lorem ipsum dolor !</li>
         </ul>
-        <button className="bg-black rounded-md text-white  py-2">Get Started Free</button>
-
+        <button className="bg-black rounded-md text-white  py-2">
+          Get Started Free
+        </button>
       </div>
     </>
   );

@@ -12,10 +12,8 @@ interface NavItem {
 }
 
 const Navbar: FC = () => {
-
   const [isShow, setShow] = useState<boolean>(false);
   const pathname = usePathname();
-  console.log('>>>>>>>>>>>', pathname)
 
   const navItems: NavItem[] = [
     { name: "Home", path: "/" },
@@ -24,17 +22,13 @@ const Navbar: FC = () => {
     { name: "Features", path: "/#feature" },
   ];
 
-  
   const handleMenu = () => {
-    setShow(prevState => !prevState);
+    setShow((prevState) => !prevState);
   };
 
   return (
     <>
-    {
-      isShow&&
-    <MobileBar/>
-    }
+      {isShow && <MobileBar />}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -48,10 +42,7 @@ const Navbar: FC = () => {
       >
         {/* right section  */}
         <div className="flex items-center  md:gap-5 gap-1 ">
-          <div 
-          onClick={handleMenu}
-           className="flex md:hidden items-center">
-            
+          <div onClick={handleMenu} className="flex md:hidden items-center">
             <Menu size={28} />
           </div>
           <Link href={"/"} className="cursor-pointer">
@@ -61,9 +52,12 @@ const Navbar: FC = () => {
           <ul className="hidden md:flex gap-4 cursor-pointer">
             {navItems.map((item) => (
               <li key={item.name}>
-                <Link 
-                className={`${item.path === pathname&&"text-orange-500 font-bold"}`}
-                href={item.path}>
+                <Link
+                  className={`${
+                    item.path === pathname && "text-orange-500 font-bold"
+                  }`}
+                  href={item.path}
+                >
                   {item.name}
                 </Link>{" "}
               </li>

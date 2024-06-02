@@ -181,8 +181,8 @@ const Homepg: FC = () => {
         <div className="absolute left-12 top-[18rem]">
           <Star size={30} />
         </div>
-        <div className="absolute right-12 top-0">
-          <Star size={50} />
+        <div className="absolute right-12 top-32 md:top-2">
+          <Star size={40} />
         </div>
       </div>
       <Light2 />
